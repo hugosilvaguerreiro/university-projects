@@ -5,7 +5,7 @@ Collection of (almost) all the projects that I developed for the different cours
 <details>
 <summary>Click to expand!</summary>
 
-[![](./badges/FP.svg)](FP)          ![](./badges/IAC.svg))[IAC]       ![](./badges/LP.svg))[LP]
+[![](./badges/FP.svg)](FP)          [![](./badges/IAC.svg)](IAC)       [![](./badges/LP.svg)](LP)
 
 </details>  
 
@@ -13,25 +13,25 @@ Collection of (almost) all the projects that I developed for the different cours
 <details>
   <summary>Click to expand!</summary>
   
-(![](./badges/ASA.svg))[ASA]        (![](./badges/IPM.svg))[IPM]     (![](./badges/PO.svg))[PO]
-(![](./badges/SO.svg))[SO]       
+[![](./badges/ASA.svg)](ASA)        [![](./badges/IPM.svg)](IPM)     [![](./badges/PO.svg)](PO)
+[![](./badges/SO.svg)](SO)       
 </details>
 
 # 3rd year (Bsc.) 
 <details>
   <summary>Click to expand!</summary>
   
-(![](./badges/BD.svg))[BD]           (![](./badges/CG.svg))[CG]        (![](./badges/CO.svg))[CO]
-(![](./badges/ES.svg))[ES]           (![](./badges/IA.svg))[IA]        (![](./badges/RC.svg))[RC] 
-(![](./badges/SD.svg))[SD]
+[![](./badges/BD.svg)](BD)           [![](./badges/CG.svg)](CG)        [![](./badges/CO.svg)](CO)
+[![](./badges/ES.svg)](ES)           [![](./badges/IA.svg)](IA)        [![](./badges/RC.svg)](RC)
+[![](./badges/SD.svg)](SD)
 </details>
 
 # 4th and 5th year (Msc.)
 <details>
   <summary>Click to expand!</summary>
   
-(![](./badges/AASMA.svg))[AASMA] (![](./badges/AVT.svg))[AVT] (![](./badges/CMU.svg))[CMU]
-(![](./badges/CNV.svg))[CNV] (![](./badges/CRC.svg))[CRC] (![](./badges/DAD.svg))[DAD] 
-(![](./badges/LN.svg))[LN] (![](./badges/SIRS.svg))[SIRS]       
+[![](./badges/AASMA.svg)](AASMA) [![](./badges/AVT.svg)](AVT) [![](./badges/CMU.svg)](CMU)
+[![](./badges/CNV.svg)](CNV) [![](./badges/CRC.svg)](CRC) [![](./badges/DAD.svg)](DAD)
+[![](./badges/LN.svg)](LN) [![](./badges/SIRS.svg)](SIRS)       
 </details>
 

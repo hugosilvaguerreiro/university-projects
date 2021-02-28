@@ -1,5 +1,5 @@
-# university-projects
-Collection of (almost) all the projects that I developed for the different coursed in my Bachelors and Masters degree at Instituto Superior Técnico.
+# University Projects
+Collection of (almost) all the projects that I developed for the different courses during my Bachelors and Masters degree at Instituto Superior Técnico.
 
 # 1st year (Bsc.)
 <details>

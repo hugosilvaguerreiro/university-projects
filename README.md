@@ -5,10 +5,8 @@ Collection of (almost) all the projects that I developed for the different cours
 <details>
 <summary>:heart: Thank you</summary>
 
-Solarized dark             |  Solarized Ocean          |  Solarized test
-:-------------------------:|:-------------------------:|:-------------------------:
-![](badges/SIRS.svg)     |  ![](badges/SIRS.svg)   | ![](badges/SIRS.svg)  
-</details>  
+![Thank you](badges/SIRS.svg)
+</details>
 
 # 2nd year (Bsc.)
 <details>

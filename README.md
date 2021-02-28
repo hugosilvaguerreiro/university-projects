@@ -5,11 +5,7 @@ Collection of (almost) all the projects that I developed for the different cours
 <details>
 <summary>Click to expand!</summary>
 
-![](./badges/FP.svg)         |  ![](./badges/IAC.svg)      | ![](./badges/LP.svg)
-:-------------------------:|:-------------------------:|:-------------------------:
-
-![](./badges/FP.svg)        ![](./badges/IAC.svg)      ![](./badges/LP.svg)
-![](./badges/LP.svg)
+![](./badges/FP.svg)          ![](./badges/IAC.svg)       ![](./badges/LP.svg)
 
 </details>  
 

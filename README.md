@@ -5,7 +5,7 @@ Collection of (almost) all the projects that I developed for the different cours
 <details>
 <summary>Click to expand!</summary>
 
-(![](./badges/FP.svg))[FP]          ![](./badges/IAC.svg))[IAC]       ![](./badges/LP.svg))[LP]
+[![](./badges/FP.svg)](FP)          ![](./badges/IAC.svg))[IAC]       ![](./badges/LP.svg))[LP]
 
 </details>  
 

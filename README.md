@@ -7,7 +7,7 @@ Collection of (almost) all the projects that I developed for the different cours
 
 Solarized dark             |  Solarized Ocean          |  Solarized test
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/hugosilvaguerreiro/university-projects/main/badges/SIRS.svg)     |  ![](https://raw.githubusercontent.com/hugosilvaguerreiro/university-projects/main/badges/SIRS.svg)   | ![](https://raw.githubusercontent.com/hugosilvaguerreiro/university-projects/main/badges/SIRS.svg)  
+![](badges/SIRS.svg)     |  ![](https://raw.githubusercontent.com/hugosilvaguerreiro/university-projects/main/badges/SIRS.svg)   | ![](https://raw.githubusercontent.com/hugosilvaguerreiro/university-projects/main/badges/SIRS.svg)  
 </details>  
 
 # 2nd year (Bsc.)

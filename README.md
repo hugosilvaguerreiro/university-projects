@@ -5,30 +5,36 @@ Collection of (almost) all the projects that I developed for the different cours
 <details>
 <summary>:heart: Thank you</summary>
 
-![Thank you](badges/SIRS.svg)
-</details>
+![](./badges/FP.svg)         |  ![](./badges/IAC.svg)      | ![](./badges/LP.svg)
+:-------------------------:|:-------------------------:|:-------------------------:
+
+</details>  
 
 # 2nd year (Bsc.)
 <details>
   <summary>Click to expand!</summary>
-
+![](./badges/ASA.svg)        |  ![](./badges/IPM.svg)      | ![](./badges/PO.svg)
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./badges/SO.svg)           
 </details>
 
-# 3rd year (Bsc.)
+# 3rd year (Bsc.) BD, CG, CO, ES, IA, RC, SD
 <details>
   <summary>Click to expand!</summary>
-
+![](./badges/BD.svg)         |  ![](./badges/CG.svg)       | ![](./badges/CO.svg)
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./badges/ES.svg)         |  ![](./badges/IA.svg)       | ![](./badges/RC.svg) 
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./badges/SD.svg)
 </details>
 
-# 4th year (Msc.)
+# 4th and 5th year (Msc.) AASMA, AVT, CMU, CNV, CRC, DAD, LN, SIRS
 <details>
   <summary>Click to expand!</summary>
-
-</details>
-
-# 5th year (Msc.)
-<details>
-  <summary>Click to expand!</summary>
-
+![](./badges/AASMA.svg)      |  ![](./badges/AVT.svg)      | ![](./badges/CMU.svg)
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./badges/CNV.svg)        |  ![](./badges/CRC.svg)      | ![](./badges/DAD.svg) 
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./badges/LN.svg)         |  ![](./badges/SIRS.svg)       
 </details>
 

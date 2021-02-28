@@ -1,31 +1,33 @@
 # university-projects
 Collection of (almost) all the projects that I developed for the different coursed in my Bachelors and Masters degree at Instituto Superior Técnico.
 
-# First year (Bsc.)
+# 1st year (Bsc.)
+<details>
+  <summary>Click to expand!</summary>
+Solarized dark             |  Solarized Ocean          |  Solarized test
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./badges/SIRS.svg)     |  ![](./badges/SIRS.svg)   | ![](./badges/SIRS.svg)  
+</details>
+
+# 2nd year (Bsc.)
 <details>
   <summary>Click to expand!</summary>
 
 </details>
 
-# Second year (Bsc.)
+# 3rd year (Bsc.)
 <details>
   <summary>Click to expand!</summary>
 
 </details>
 
-# Third year (Bsc.)
+# 4th year (Msc.)
 <details>
   <summary>Click to expand!</summary>
 
 </details>
 
-# Forth year (Msc.)
-<details>
-  <summary>Click to expand!</summary>
-
-</details>
-
-# Fifth year (Msc.)
+# 5th year (Msc.)
 <details>
   <summary>Click to expand!</summary>
 

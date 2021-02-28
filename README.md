@@ -5,7 +5,7 @@ Collection of (almost) all the projects that I developed for the different cours
 <details>
 <summary>:heart: Thank you</summary>
 
-![Thank you](./badges/SIRS.svg)
+[![](./badges/SIRS.svg)](google.com)
 </details>
 
 # 2nd year (Bsc.)

@@ -4,8 +4,8 @@ Collection of (almost) all the projects that I developed for the different cours
 # 1st year (Bsc.)
 <details>
   <summary>Click to expand!</summary>
+  ![test]("https://www.gstatic.com/images/branding/product/2x/photos_96dp.png")
   
-    ![test](https://raw.githubusercontent.com/hugosilvaguerreiro/university-projects/main/badges/SIRS.svg)
 
 </details>
 

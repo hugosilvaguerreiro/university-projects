@@ -56,14 +56,14 @@
     
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">Projects developed for the SIRS course</tspan>
+      <tspan dy="1.2em" x="25">Mobile chat app with NFC-based security mechanisms</tspan>
     </text>
 
     <g transform="translate(0, 45)">
       
     <g data-testid="primary-lang" transform="translate(30, 0)">
       <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#3572A5"/>
-      <text data-testid="lang-name" class="gray" x="15">Python</text>
+      <text data-testid="lang-name" class="gray" x="15">Java</text>
     </g>
     
 

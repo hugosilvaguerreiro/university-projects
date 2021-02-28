@@ -31,10 +31,8 @@ Collection of (almost) all the projects that I developed for the different cours
 <details>
   <summary>Click to expand!</summary>
   
-![](./badges/AASMA.svg)        ![](./badges/AVT.svg)       ![](./badges/CMU.svg)
-
-![](./badges/CNV.svg)          ![](./badges/CRC.svg)       ![](./badges/DAD.svg) 
-
-![](./badges/LN.svg)           ![](./badges/SIRS.svg)       
+![](./badges/AASMA.svg) ![](./badges/AVT.svg) ![](./badges/CMU.svg)
+![](./badges/CNV.svg) ![](./badges/CRC.svg) ![](./badges/DAD.svg) 
+![](./badges/LN.svg) ![](./badges/SIRS.svg)       
 </details>
 

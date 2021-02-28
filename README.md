@@ -16,7 +16,7 @@ Collection of (almost) all the projects that I developed for the different cours
   
 ![](./badges/ASA.svg)      |  ![](./badges/IPM.svg)    | ![](./badges/PO.svg)
 :-------------------------:|:-------------------------:|:-------------------------:
-![](./badges/SO.svg)       |                           |
+![](./badges/SO.svg)       
 </details>
 
 # 3rd year (Bsc.) BD, CG, CO, ES, IA, RC, SD

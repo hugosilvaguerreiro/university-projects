@@ -23,7 +23,6 @@ Collection of (almost) all the projects that I developed for the different cours
   
 ![](./badges/BD.svg)           ![](./badges/CG.svg)        ![](./badges/CO.svg)
 ![](./badges/ES.svg)           ![](./badges/IA.svg)        ![](./badges/RC.svg) 
-
 ![](./badges/SD.svg)
 </details>
 

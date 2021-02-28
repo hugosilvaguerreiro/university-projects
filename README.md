@@ -4,10 +4,7 @@ Collection of (almost) all the projects that I developed for the different cours
 # 1st year (Bsc.)
 <details>
 <summary>:heart: Thank you</summary>
-
-![](badges/FP.svg)         |  ![](badges/IAC.svg)      | ![](badges/LP.svg)
-:-------------------------:|:-------------------------:|:-------------------------:
-![](badges/SIRS.svg)       |  ![](badges/SIRS.svg)     | ![](badges/SIRS.svg)  
+![](badges/SIRS.svg)  
 
 </details>  
 

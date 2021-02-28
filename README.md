@@ -13,6 +13,7 @@ Collection of (almost) all the projects that I developed for the different cours
 # 2nd year (Bsc.)
 <details>
   <summary>Click to expand!</summary>
+  
 ![](./badges/ASA.svg)      |  ![](./badges/IPM.svg)    | ![](./badges/PO.svg)
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](./badges/SO.svg)       |                           |
@@ -21,6 +22,7 @@ Collection of (almost) all the projects that I developed for the different cours
 # 3rd year (Bsc.) BD, CG, CO, ES, IA, RC, SD
 <details>
   <summary>Click to expand!</summary>
+  
 ![](./badges/BD.svg)         |  ![](./badges/CG.svg)       | ![](./badges/CO.svg)
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](./badges/ES.svg)         |  ![](./badges/IA.svg)       | ![](./badges/RC.svg) 
@@ -31,6 +33,7 @@ Collection of (almost) all the projects that I developed for the different cours
 # 4th and 5th year (Msc.) AASMA, AVT, CMU, CNV, CRC, DAD, LN, SIRS
 <details>
   <summary>Click to expand!</summary>
+  
 ![](./badges/AASMA.svg)      |  ![](./badges/AVT.svg)      | ![](./badges/CMU.svg)
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](./badges/CNV.svg)        |  ![](./badges/CRC.svg)      | ![](./badges/DAD.svg) 

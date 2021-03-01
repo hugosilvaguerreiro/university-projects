@@ -1,0 +1,6 @@
+#ifndef __GAMEH__
+#define __GAMEH__
+
+enum OBJECTS_TYPE {FROG, CAR, RIVER, OBSTACLE, PAVEWALK, TRUNK, TURTLE};
+
+#endif

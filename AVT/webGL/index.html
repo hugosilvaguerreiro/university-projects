@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+	<title>Frogger</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bottombar.css">
+	<!--Load three.js-->
+    <script src="scripts/three.min.js"></script>
+    <!--script src="scripts/Three.js"></script-->
+	<script src="scripts/MTLLoader.js"></script>
+	<script src="scripts/OBJLoader.js"></script>
+	<script src="scripts/OrbitControls.js"></script>
+	<script src="scripts/DeviceOrientationControls.js"></script>
+	<script src="scripts/StereoEffect.js"></script>
+  	<script src="scripts/CombinedCamera.js"></script>
+  	<script src="scripts/THREEx.KeyboardState.js"></script>
+  	<script src="scripts/Factory.js"></script>
+    <script src="scripts/CollisionDetector.js"></script>
+    <script src="scripts/LensFlare/LensFlare.js"></script>
+    <script src="scripts/Mirror.js"></script>
+    <script src="scripts/Stats.js"></script>
+    <script src="scripts/refractor.js"></script>
+    <script src="scripts/water.js"></script>
+  	<script src="scripts/Scene.js"></script>
+</head>
+
+<script type="x-shader/x-vertex" id="vertexs">
+varying vec2 vN;
+void main() {
+	vec3 e = normalize( vec3( modelViewMatrix * vec4( position, 1.0 ) ) );
+	vec3 n = normalize( normalMatrix * normal );
+	vec3 r = reflect( e, n );
+	float m = 2. * sqrt( pow( r.x, 2. ) + pow( r.y, 2. ) + pow( r.z + 1., 2. ) );
+	vN = r.xy / m + .5;
+	gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1. );
+}
+</script>
+
+<script type="x-shader/x-fragment" id="frags">
+uniform sampler2D tMatCap;
+uniform float tOpacity;
+varying vec2 vN;
+void main() {
+	
+	vec3 base = texture2D( tMatCap, vN ).rgb;
+	gl_FragColor = vec4( base, tOpacity );
+}
+</script>
+
+
+<script type="x-shader/x-vertex" id="sky-vertexs">  
+varying vec2 vUV;
+
+void main() {  
+	vUV = uv;
+	vec4 pos = vec4(position, 1.0);
+	gl_Position = projectionMatrix * modelViewMatrix * pos;
+}
+</script>
+	
+<script type="x-shader/x-fragment" id="sky-frags">  
+uniform sampler2D texture;  
+varying vec2 vUV;
+
+void main() {  
+	vec4 sample = texture2D(texture, vUV);
+	gl_FragColor = vec4(sample.xyz, sample.w);
+}
+</script>  
+
+<body onload="init()">
+	<div id="container"></div>
+	<div id="gameOver">GAME OVER!</div>
+	<div id="scoreKeeper">
+		<div id="score">
+			<span>Score: </span>
+			<span id="scoreno">0</span>
+			<button onclick="openFullscreen()">F</button>
+		</div>
+		<div id="name">
+			<span>Frogger</span>
+		</div>
+		<div id="lives">
+			<span>Lives: </span>
+			<span id="rem">3</span>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><doctype html="">		
+		<title>Projeto de CG</title>
+		<style>
+			@font-face {
+				font-family: myFirstFont;
+				src: url(best_font.ttf);
+			}
+			body {
+				margin: 0px;
+				background-color: #000000;
+				overflow: hidden;
+			}
+			canvas{
+				z-index: 0;
+			    display: block;
+			    margin: 0 auto;
+			    position: relative;
+			    top: 50%;
+				
+			}
+			#pauseMsg {
+				z-index: 1;
+			    background-color:rgba(0, 0, 0, 0.5);
+				position:absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		</style>
+		<script src="js/three.js"></script>
+		<script src="js/objects/cameraManager.js"></script>
+		<script src="js/objects/customCamera.js"></script>
+		<script src="js/objects/baseObject.js"></script>
+		<script src="js/materials.js"></script>
+		<script src="js/objects/butter.js"></script>
+		<script src="js/objects/ringOfMeshes.js"></script>
+		<script src="js/objects/randomizer.js"></script>
+		<script src="js/objects/orange.js"></script>
+		<script src="js/objects/car.js"></script>
+		<script src="js/objects/spoiler.js"></script>
+		<script src="js/objects/road.js"></script>
+		<script src="js/objects/table.js"></script>
+		<script src="js/objects/roadHelper.js"></script>
+		<script src="js/objects/cheerio.js"></script>
+		<script src="js/objects/collisionManager.js"></script>
+		<script src="js/objects/candle.js"></script>
+		<script src="js/objects/lifeBar.js"></script>
+		<script src="js/objects/globalLight.js"></script>
+		<script src="js/objects/plane.js"></script>
+		<script src="js/Projeto.js"></script>
+		<script>
+			init();
+		</script>
+		<div id="pauseMsg" style="visibility: hidden"><p style="margin-bottom: 0; font-family:'myFirstFont'; font-size:40pt ;color:white; text-align: center; opacity: 1.0;">GAME IS PAUSED</p><p style="margin-top: 10; font-family:'myFirstFont'; font-size:20pt ;color:white; text-align: center; opacity: 1.0;">press S to continue</p></div>
+	
+</doctype></body></html>

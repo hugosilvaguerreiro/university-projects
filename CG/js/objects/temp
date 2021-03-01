@@ -1,0 +1,70 @@
+function createTriangle(position, scale, material) {
+	var geometry = new THREE.Geometry();
+
+	geometry.vertices.push( new THREE.Vector3(0, 0, 0 ) );
+	geometry.vertices.push( new THREE.Vector3( 0, 0, scale));
+	geometry.vertices.push( new THREE.Vector3( scale, 0, 0));
+	geometry.faces.push( new THREE.Face3( 0, 1, 2 ) );
+	geometry.computeFaceNormals();
+	geometry.computeVertexNormals();
+	material.side = THREE.DoubleSide;
+	var triangle = new THREE.Mesh( geometry, material );
+	triangle.position.set(position.x-scale/2, position.y, position.z-scale/2);
+	var object = new THREE.Object3D(triangle);
+	return object;
+}
+
+function createSquare(position, scale, material) {
+	var geometry = new THREE.Geometry();
+
+	geometry.vertices.push( new THREE.Vector3(0, 0, 0 ) );
+	geometry.vertices.push( new THREE.Vector3( 0, 0, scale));
+	geometry.vertices.push( new THREE.Vector3( scale, 0, 0));
+	geometry.vertices.push( new THREE.Vector3( scale, 0, scale));
+	geometry.faces.push( new THREE.Face3( 0, 1, 2 ) );
+	geometry.faces.push( new THREE.Face3( 1, 2, 3 ) );
+	geometry.computeFaceNormals();
+	geometry.computeVertexNormals();
+	material.side = THREE.DoubleSide;
+	var square = new THREE.Mesh( geometry, material );
+	square.position.set(position.x - scale/2, position.y, position.z - scale/2);
+	var object = new THREE.Object3D();
+	object.add(square);
+	return object;
+	
+}
+
+function createCube(position, scale, material) {
+	var base = createSquare(position, scale, material);
+	var side1 = createSquare(position, scale, material);
+	side1.rotation.z =Math.PI/2;
+	side1.position.x += scale/2;
+	side1.position.y += scale/2;
+	
+	var side2 = createSquare(position, scale, material);
+	side2.rotation.z = Math.PI/2;
+	side2.position.x -= scale/2;
+	side2.position.y += scale/2;
+	position.y += scale;
+	var top = createSquare(position, scale, material);
+	var cube = new THREE.Object3D();
+	cube.add(base);
+	cube.add(top);
+	cube.add(side1);
+	cube.add(side2);
+	return cube;
+	
+}
+
+
+var mat = new THREE.MeshLambertMaterial();
+//var triangle = createTriangle(new THREE.Vector3(0,0,0), 10, mat);
+//scene.add(triangle);
+//var square = createSquare(new THREE.Vector3(0,0,0), 10, mat);
+//scene.add(square);
+
+var cube = createCube(new THREE.Vector3(0,0,0), 10, mat);
+scene.add(cube);
+
+
+

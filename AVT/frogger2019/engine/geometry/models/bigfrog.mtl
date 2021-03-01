@@ -1,0 +1,13 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl 12268_banjofrog_
+Ns 56.000001
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.180000 0.180000 0.180000
+Ke 0.0 0.0 0.0
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd /home/huguntu/Downloads/banjofrog_v1_L3.123cd6407f5a-451d-418c-a431-e501c84904f0/12268_banjofrog_diffuse.jpg

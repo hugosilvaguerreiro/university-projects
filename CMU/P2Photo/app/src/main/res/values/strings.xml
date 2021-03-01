@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+    <string name="app_name">P2Photo</string>
+    <string name="cloud_google_drive">Cloud (Dropbox)</string>
+    <string name="wifi_direct">WiFi Direct</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is invalid</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="action_register">Register</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="url_login">"https://cmu.dorin.space/login"</string>
+    <string name="url_register">"https://cmu.dorin.space/newuser"</string>
+    <string name="title_activity_register">Register New User</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="error_no_match_password">Passwords don\'t match</string>
+    <string name="error_user_exists">User Already Exists</string>
+    <string name="title_activity_gallery">Gallery</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_key">momes2aooyaxqg0</string>
+
+    <string name="mode_wifi">cloud</string>
+    <string name="mode_cloud">wifi</string>
+
+    <!-- Dropbox gallery strings -->
+    <string name="file_path">p2photo_dropbox_gallery</string>
+    <string name="menu_item_search">Search Users</string>
+    <string name="menu_item_new_album">New Album</string>
+    <string name="saved_user_cookie">user_cookie</string>
+    <string name="saved_user_id">user_id</string>
+    <string name="saved_username">username</string>
+
+    <string name="action_continue">Continue</string>
+    <string name="menu_item_logout">Logout</string>
+    <string name="title_activity_albums">AlbumsActivity</string>
+    <string name="error_inalid_album_name">Album name is Invalid</string>
+    <string name="logout">Logout</string>
+    <string name="url_listusers">https://cmu.dorin.space/searchuser</string>
+    <string name="menu_list_users">List Users</string>
+    <string name="find_user">Find User</string>
+    <string name="url_logout">https://cmu.dorin.space/logout</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer closed</string>
+    <string name="hello_world">test</string>
+    <string name="url_listdb">https://cmu.dorin.space/listdb</string>
+    <string name="url_create_album">https://cmu.dorin.space/newalbum</string>
+    <string name="url_create_slice">https://cmu.dorin.space/setsliceurl</string>
+    <string name="url_list_user_album">https://cmu.dorin.space/getalbums</string>
+    <string name="url_get_albums">https://cmu.dorin.space/getalbums</string>
+    <string name="url_add_user_to_album">https://cmu.dorin.space/addusertoalbum</string>
+
+    <string name="wifi_service_name">P2photo</string>
+    <string name="wifi_service_type">wifi</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_item_test">test</string>
+
+
+</resources>

@@ -1,0 +1,41 @@
+<html>
+   <div class="panel panel-primary" >
+      <div class="panel-heading">
+         <h3 class="panel-title" style="position: relative;">Sopas</h3>
+         <a href='#' class='btn btn-danger' onclick="openSideMenu('principal', interface, 'order/foodhtmls',270)" style="width: 27px; height: 27px; padding: 0; font-size: 16px; margin: 2px; position:absolute; left: 85%; top: 1%">&times;</a>
+      </div>
+      <div class="panel-body" style="padding-right: 0px;">
+         <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix" style="height:380px; overflow: auto">
+            <li class="ui-widget-content ui-corner-tr" id ="canja">
+               <h5 class="ui-widget-header"  >Canja de galinha</h5>
+               <img src="resources/Images/food/sopas/canja.png" alt="canja" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('canja', 'sopas', 'Canja de galinha','2.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#canja'), 'canja', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="sopaCenoura">
+               <h5 class="ui-widget-header"  >Creme de Cenoura</h5>
+               <img src="resources/Images/food/sopas/sopaCenoura.png" alt="sopa cenoura" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('sopaCenoura', 'sopas','Creme de cenoura','2.10&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#sopaCenoura'), 'sopaCenoura', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="sopaErvilhas">
+               <h5 class="ui-widget-header"  >Sopa de ervilhas</h5>
+               <img src="resources/Images/food/sopas/sopaErvilhas.png" alt="sopa ervilhas" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('sopaErvilhas', 'sopas','Sopa de ervilhas','2.05&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#sopaErvilhas'), 'sopaErvilhas', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+             <li class="ui-widget-content ui-corner-tr" id ="sopaTomate">
+               <h5 class="ui-widget-header"  >Sopa de tomate</h5>
+               <img src="resources/Images/food/sopas/sopaTomate.png" alt="sopa tomate" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('sopaTomate', 'sopas','Sopa de ervilhas','2.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#sopaTomate'), 'sopaTomate', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+         </ul>
+
+      </div>
+   </div>
+</html>

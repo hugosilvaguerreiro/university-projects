@@ -1,0 +1,19 @@
+<html>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Insira o seu nif (opcional)
+  </div>
+  <div class="panel-body">
+  	<form>
+		<div class="form-group">
+				<label for="password">NIF</label>
+				<input type="text" class="form-control" id="password" placeholder="123456789" maxlength="9" minlength="9">
+		</div>
+	</form>
+    <div class="btn-group btn-group-justified" style="width: 100%;">
+		<a href="#" class="btn btn-success" title="Por favor insira um número de 9 digitos ou não insira nenhum NIF" onclick="interface.removePopUp();interface.popup(300 , 150, {'x':w/2, 'y':h/2}, 'resources/htmls/popUps/empregadoACaminho.html');changeWaiter(1); empregado(1)">OK</a>
+		<a href="#" class="btn btn-danger" onclick="interface.removePopUp();">Cancelar</a>
+	</div>
+  </div>
+</div>
+</html>

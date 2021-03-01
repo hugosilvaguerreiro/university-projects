@@ -1,0 +1,42 @@
+<html>
+   <div class="panel panel-primary" >
+      <div class="panel-heading">
+         <h3 class="panel-title" style="position: relative;">Saladas</h3>
+         <a href='#' class='btn btn-danger' onclick="openSideMenu('principal', interface, 'order/foodhtmls',270)" style="width: 27px; height: 27px; padding: 0; font-size: 16px; margin: 2px; position:absolute; left: 85%; top: 1%">&times;</a>
+      </div>
+      <div class="panel-body" style="padding-right: 0px;">
+         <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix" style="height:380px; overflow: auto">
+            <li class="ui-widget-content ui-corner-tr" id ="saladaAtum">
+               <h5 class="ui-widget-header"  >Salada de Atum</h5>
+               <img src="resources/Images/food/saladas/saladaAtum.png" alt="saladaAtum" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('saladaAtum', 'saladas', 'Salada de Atum','4.50&euro;',1,'00000011')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#saladaAtum'), 'saladaAtum', '00000011',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="saladaCaranguejo">
+               <h5 class="ui-widget-header"  >Salada de Caranguejo</h5>
+               <img src="resources/Images/food/saladas/saladaCaranguejo.png" alt="saladaCaranguejo" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('saladaCaranguejo', 'saladas', 'Salada de Caranguejo','4.50&euro;',1,'00000011')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#saladaCaranguejo'), 'saladaCaranguejo', '00000011',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="saladaCaesar">
+               <h5 class="ui-widget-header"  >Salada <br/> Caesar</h5>
+               <img src="resources/Images/food/saladas/saladaCaesar.png" alt="saladaCaesar" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('saladaCaesar', 'saladas', 'Salada Caesar','4.50&euro;',1,'00000011')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#saladaCaesar'), 'saladaCaesar', '00000011',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="saladaMista">
+               <h5 class="ui-widget-header"  >Salada <br/> Mista</h5>
+               <img src="resources/Images/food/saladas/saladaMista.png" alt="saladaMista" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('saladaMista', 'saladas', 'Salada Mista','4.50&euro;',1,'00000011')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#saladaMista'), 'saladaMista', '00000011',5.00)" aria-hidden="true"></i>
+            </li>
+
+         </ul>
+
+      </div>
+   </div>
+</html>

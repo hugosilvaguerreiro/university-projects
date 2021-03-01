@@ -1,0 +1,10 @@
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\bin\Release\DIDA-Client.exe.config
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\bin\Release\DIDA-Client.exe
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\bin\Release\DIDA-Client.pdb
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\bin\Release\DIDA-Lib.dll
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\bin\Release\DIDA-Lib.pdb
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\obj\Release\DIDA-Client.csprojAssemblyReference.cache
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\obj\Release\DIDA-Client.csproj.CoreCompileInputs.cache
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\obj\Release\DIDA-Client.csproj.CopyComplete
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\obj\Release\DIDA-Client.exe
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Client\obj\Release\DIDA-Client.pdb

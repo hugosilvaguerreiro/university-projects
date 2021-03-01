@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/atn_direct_enable"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Toggle"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/atn_direct_discover"
+        android:icon="@drawable/ic_find_in_page"
+        android:title="Discover"
+        app:showAsAction="ifRoom|withText" />
+</menu>

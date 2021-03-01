@@ -1,0 +1,17 @@
+<html>
+<div id="trashTop" class="panel panel-info" style="margin: 0; padding: 0; visibility: hidden;" >
+  <div class="panel-heading">
+    <span style="margin-right: 80%; font-size: 17px;">O meu pedido</span>
+	<i class="fa fa-bars" onclick="$('#trash2').toggle('puff')" style= "font-size: 20px; cursor: pointer;"  aria-hidden="true"></i>
+  </div>
+</div>
+<div id="trash2" class="panel-collapse collapse" style="margin: 0; padding: 0;"  >
+</div>
+<div class="panel panel-info" style="margin: 0; padding: 0;">
+	  <div class="panel-heading">
+    <span id="total" class="badge" style="margin-right: 55%; font-size: 15px;" >Total:0.00&euro;</span>
+      <button id="confirmOrder" class="btn btn-success disabled"  onclick='confirm()'>Confirmar pedido</button>
+      <button class="btn btn-danger" onclick='interface.popup(300 , 150, {"x":w - buttonSize -355, "y":h -120}, "resources/htmls/order/PopUps/cancelarPedido.html");'>Cancelar pedido</button>
+  </div>
+</div>
+</html>

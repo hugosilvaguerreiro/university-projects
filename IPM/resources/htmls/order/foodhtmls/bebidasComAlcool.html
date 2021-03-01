@@ -1,0 +1,35 @@
+<html>
+   <div class="panel panel-primary" >
+      <div class="panel-heading">
+         <h3 class="panel-title" style="position: relative;">Bebidas com álcool</h3>
+         <a href='#' class='btn btn-danger' onclick="openSideMenu('bebidas', interface, 'order/foodhtmls',270)" style="width: 27px; height: 27px; padding: 0; font-size: 16px; margin: 2px; position:absolute; left: 85%; top: 1%">&times;</a>
+      </div>
+      <div class="panel-body" style="padding-right: 0px;">
+         <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix" style="height:380px; overflow: auto">
+            <li class="ui-widget-content ui-corner-tr" id ="cerveja">
+               <h5 class="ui-widget-header" style="min-height: 35.5px" >Cerveja<br/></h5>
+               <img src="resources/Images/food/bebidas/cerveja.png" alt="cerveja" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('cerveja', 'bebidas', 'Cerveja','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#cerveja'), 'cerveja', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+           <li class="ui-widget-content ui-corner-tr" id ="somersbyA">
+               <h5 class="ui-widget-header" style="min-height: 35.5px" >Cidra de maçã</h5>
+               <img src="resources/Images/food/bebidas/somersbyA.png" alt="somersbyA" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('somersbyA', 'bebidas', 'Cidra de maçã','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#somersbyA'), 'somersbyA', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+           <li class="ui-widget-content ui-corner-tr" id ="somersbyB">
+               <h5 class="ui-widget-header"  >Cidra de amora</h5>
+               <img src="resources/Images/food/bebidas/somersbyB.png" alt="somersbyB" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('somersbyB', 'bebidas', 'cidra de amora','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#somersbyB'), 'somersbyB', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+
+         </ul>
+
+      </div>
+   </div>
+</html>

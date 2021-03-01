@@ -1,0 +1,19 @@
+<html>
+   <div class="panel panel-primary" >
+      <div class="panel-heading">
+         <h3 class="panel-title" style="position: relative;">Pagamento</h3>
+         <a href='#' class='btn btn-danger' onclick="removePaymentTrash();interface.removeSideMenu()" style="width: 27px; height: 27px; padding: 0; font-size: 16px; margin: 2px; position:absolute; left: 85%; top: 1%">&times;</a>
+      </div>
+      <h3 id="price" style= "text-align: center; margin-bottom: : 0">
+         Total: 0&euro;
+      </h3>
+      <hr style="margin: 0">
+      <div class="panel-body">
+      <span style="text-align: center; font-size: 14px; margin-bottom: 10px" >Insira o cartão no leitor e siga as instruções</span>
+      <img src="resources/Images/cardReader.png" style="width: 50%; height: 50%; margin-left: 25% ; margin-bottom: 3px ">
+      <i class="fa fa-spinner fa-pulse fa-3x fa-fw" style="margin-left: 38%; margin-bottom: 5px"></i>
+      <hr style="margin-bottom: 0">
+      <a href="#" class="btn btn-danger" style="width:100%; font-size: 17px" onclick="interface.removeSideMenu(); openPayment();clearTimeout(time)">Cancelar</a>
+      </div>
+   </div>
+</html>

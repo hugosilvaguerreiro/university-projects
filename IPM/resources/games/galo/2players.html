@@ -1,0 +1,33 @@
+ <head>
+  <script type="text/javascript" src="../../jquery/jquery.js"></script>
+  <script type="text/javascript" src="galo.js"></script>
+  <script type="text/javascript" src="../../underscore/underscore.js"></script>
+   <link rel="stylesheet" href="galo.css">
+   <script type="text/javascript">
+     function voltar() {
+       window.location = "galo.html";
+     }
+   </script>
+</head>
+<h1>Jogo do Galo</h1>
+<div id="grid">
+  <div class="cell left top" id="0"></div>
+  <div class="cell top" id="1"></div>
+  <div class="cell right top" id="2"></div>
+  <div class="cell left" id="3"></div>
+  <div class="cell" id="4"></div>
+  <div class="cell right" id="5"></div>
+  <div class="cell left bottom" id="6"></div>
+  <div class="cell bottom" id="7"></div>
+  <div class="cell right bottom" id="8"></div>
+</div>
+<div id="result"></div>
+<form  style="display: none; visibility: hidden;">
+  <input class="players" type="radio" name="players" value=2 checked="checked" style="display: none;" />
+  <br/>
+</form>
+<button class="reset" id="resbut2" type="button">Reset</button>
+<script type="text/javascript">
+  $("#resbut2").css("display", "none");
+</script>
+<button class="reset" type="button" onclick="voltar()">Voltar</button>

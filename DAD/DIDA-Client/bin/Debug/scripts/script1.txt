@@ -1,0 +1,13 @@
+wait 5000
+add <"kek","bla">
+wait 5000
+add <"kek","bla">
+begin-repeat 5
+	add <"bla">
+	begin-repeat 10
+		add <"kek", "kek">
+	end-repeat
+end-repeat
+wait 5000
+read <"k*","*la">
+take <"k*","bla">

@@ -1,0 +1,77 @@
+<html>
+<div class="panel panel-primary" style="height:100%; width: 100%">
+  <div class="panel-heading">
+    <ul class="navbar" style="padding: 0; margin: 0;">
+      <li class="dropdown" style="list-style-type:none">
+        <a class="dropdown-toggle btn btn-info" style="width: 100%" data-toggle="dropdown" href="#">
+          </span><span class="caret" style="position: absolute; left: 15px; top: 50%;"></span> Selecione o meio de transporte
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#dropdown1" data-toggle="tab" onclick='$("#backTransport").attr("href", "#dropdown1")'>Comboios Intercidades</a></li>
+          <li><a href="#dropdown2" data-toggle="tab" onclick='$("#backTransport").attr("href", "#dropdown2")'>Autocarros Urbanos</a></li>
+          <li><a href="#dropdown3" data-toggle="tab" onclick='$("#backTransport").attr("href", "#dropdown3")'>Barcos Transtejo</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="tab-content panel-body" id="myTabContent">
+      <div class="tab-pane fade active in" id="dropdown1">
+        <h4>Horários de Comboios Intercidades</h4>
+        <p>Selecione um destino</p>
+        <hr>
+          <div class="btn-group-vertical" style="width: 100%">
+              <a href="#transport" class="btn btn-primary" data-toggle="tab" onclick='$("#transportTo").html("Coimbra"); makeTransportTimes(eComboios, 100);'>Coimbra</a>
+              <a href="#transport" class="btn btn-info" data-toggle="tab" onclick='$("#transportTo").html("Faro"); makeTransportTimes(eComboios, 180);'>Faro</a>
+              <a href="#transport" class="btn btn-primary" data-toggle="tab" onclick='$("#transportTo").html("Guimarães"); makeTransportTimes(eComboios, 160);'>Guimarães</a>
+              <a href="#transport" class="btn btn-info" data-toggle="tab" onclick='$("#transportTo").html("Porto"); makeTransportTimes(eComboios, 120);'>Porto</a>
+              <a href="#transport" class="btn btn-primary" data-toggle="tab" onclick='$("#transportTo").html("Viseu"); makeTransportTimes(eComboios, 100);'>Viseu</a>
+          </div>
+          <hr>
+      </div>
+      <div class="tab-pane fade" id="dropdown2">
+        <h4>Horários de Autocarros Urbanos</h4>
+        <p>Selecione um destino</p>
+        <hr>
+          <div class="btn-group-vertical" style="width: 100%">
+              <a href="#transport" class="btn btn-primary" data-toggle="tab" onclick='$("#transportTo").html("Cais do Sodré"); makeTransportTimes(eAutocarros, 20);'>Cais do Sodré</a>
+              <a href="#transport" class="btn btn-info" data-toggle="tab" onclick='$("#transportTo").html("Marquês do Pombal"); makeTransportTimes(eAutocarros, 40);'>Marquês do Pombal</a>
+              <a href="#transport" class="btn btn-primary" data-toggle="tab" onclick='$("#transportTo").html("Parque das Nações"); makeTransportTimes(eAutocarros, 12);'>Parque das Nações</a>
+              <a href="#transport" class="btn btn-info" data-toggle="tab" onclick='$("#transportTo").html("Pontinha"); makeTransportTimes(eAutocarros, 16);'>Pontinha</a>
+              <a href="#transport" class="btn btn-primary" data-toggle="tab" onclick='$("#transportTo").html("Terreiro do Paço"); makeTransportTimes(eAutocarros, 10);'>Terreiro do Paço</a>
+          </div>
+          <hr>
+      </div>
+      <div class="tab-pane fade" id="dropdown3">
+        <h4>Horários de Barco Transtejo</h4>
+        <p>Selecione um destino</p>
+        <hr>
+          <div class="btn-group-vertical" style="width: 100%">
+              <a href="#transport" class="btn btn-primary" data-toggle="tab" onclick='$("#transportTo").html("Barreiro"); makeTransportTimes(eBarcos, 20);'>Barreiro</a>
+              <a href="#transport" class="btn btn-info" data-toggle="tab" onclick='$("#transportTo").html("Cacilhas"); makeTransportTimes(eBarcos, 24);'>Cacilhas</a>
+              <a href="#transport" class="btn btn-primary" data-toggle="tab" onclick='$("#transportTo").html("Montijo"); makeTransportTimes(eBarcos, 32);'>Montijo</a>
+              <a href="#transport" class="btn btn-info" data-toggle="tab" onclick='$("#transportTo").html("Montijo"); makeTransportTimes(eBarcos, 32);'>Porto Brandão</a>
+              <a href="#transport" class="btn btn-primary" data-toggle="tab" onclick='$("#transportTo").html("Seixal"); makeTransportTimes(eBarcos, 40);'>Seixal</a>
+          </div>
+          <hr>
+      </div>
+      <div class="tab-pane fade" id="transport">
+        <h5>Viagens mais próximas com destino <span id="transportTo"></span>:</h5>
+        <hr>
+        <table class="table table-striped table-hover " style="height: 200px">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Origem</th>
+              <th>Hora Partida</th>
+              <th>Hora Chegada</th>
+            </tr>
+          </thead>
+          <tbody id="transportList">
+          </tbody>
+        </table>
+        <hr>
+        <a id="backTransport" href="#dropdown1" class="btn btn-danger" data-toggle="tab" style="float: right;">Voltar</a>
+      </div>
+  </div>
+</div>
+</html>

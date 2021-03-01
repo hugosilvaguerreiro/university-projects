@@ -1,0 +1,9 @@
+[Unit]
+
+Description=Initiate java server on port 8000
+
+[Service]
+ExecStart=/home/ec2-user/init.sh
+
+[Install]
+WantedBy=multi-user.target

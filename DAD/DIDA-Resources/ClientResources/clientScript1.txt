@@ -1,0 +1,9 @@
+wait 10000
+begin-repeat 100
+add <"bla">
+read <"bla">
+take <"b*">
+add <"kek">
+read <"k*">
+take <"kek">
+end-repeat

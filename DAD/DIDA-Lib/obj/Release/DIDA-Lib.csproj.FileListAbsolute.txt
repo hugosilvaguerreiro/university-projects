@@ -1,0 +1,6 @@
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Lib\bin\Release\DIDA-Lib.dll
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Lib\bin\Release\DIDA-Lib.pdb
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Lib\obj\Release\DIDA-Lib.csprojAssemblyReference.cache
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Lib\obj\Release\DIDA-Lib.csproj.CoreCompileInputs.cache
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Lib\obj\Release\DIDA-Lib.dll
+C:\Users\Hugo Guerreiro\Source\Repos\DIDAPROJ\DIDA\DIDA-Lib\obj\Release\DIDA-Lib.pdb

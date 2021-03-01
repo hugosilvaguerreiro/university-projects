@@ -56,7 +56,7 @@
     
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">Interpreter for a made up programming language</tspan>
+      <tspan dy="1.2em" x="25">Interpreter for the PEX programming language</tspan>
     </text>
 
     <g transform="translate(0, 45)">

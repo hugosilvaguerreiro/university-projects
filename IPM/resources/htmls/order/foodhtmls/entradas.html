@@ -1,0 +1,48 @@
+<html>
+   <div class="panel panel-primary" style="max-height: 565px;">
+      <div class="panel-heading">
+         <h3 class="panel-title" style="position: relative;">Entradas</h3>
+         <a href='#' class='btn btn-danger' onclick="interface.removeSideMenu()" style="width: 27px; height: 27px; padding: 0; font-size: 16px; margin: 2px; position:absolute; left: 85%; top: 1%">&times;</a>
+      </div>
+      <div class="panel-body" style="height: 525px; padding-right: 0px;" >
+         <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix" style="height:495px; width:100%; overflow: auto">
+            <li class="ui-widget-content ui-corner-tr" id ="pao">
+               <h5 class="ui-widget-header">Pão </h5>
+               <img src="resources/Images/food/entradas/pao.png" alt="pao" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('pao', 'entradas', 'Pão','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#pao'), 'pao', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="pates">
+               <h5 class="ui-widget-header">Patês </h5>
+               <img src="resources/Images/food/entradas/pates.png" alt="pates" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('pates', 'entradas', 'Patês','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#pates'), 'pates', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="requeijao">
+               <h5 class="ui-widget-header">Requeijão </h5>
+               <img src="resources/Images/food/entradas/requeijao.png" alt="requeijao" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('requeijao', 'entradas', 'Requeijão','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#requeijao'), 'requeijao', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="manteiga">
+               <h5 class="ui-widget-header">Manteiga </h5>
+               <img src="resources/Images/food/entradas/manteiga.png" alt="manteiga" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('manteiga', 'entradas', 'Manteiga','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#manteiga'), 'manteiga','00000000',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="azeitonas">
+               <h5 class="ui-widget-header">Azeitonas </h5>
+               <img src="resources/Images/food/entradas/azeitonas.png" alt="azeitonas" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('azeitonas', 'entradas', 'Azeitonas','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#azeitonas'), 'azeitonas', '00000000',5.000)" aria-hidden="true"></i>
+            </li>
+         </ul>
+
+      </div>
+   </div>
+</html>

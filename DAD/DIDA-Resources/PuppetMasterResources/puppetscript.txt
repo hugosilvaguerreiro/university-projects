@@ -1,0 +1,12 @@
+Server s01 tcp://localhost:11002/S 100 150
+Server s02 tcp://localhost:11003/S 200 250
+Server s03 tcp://localhost:11004/S 100 350
+Client c01 tcp://localhost:10001/S clientScript1.txt
+Client c02 tcp://localhost:10002/S clientScript1.txt
+//Client c03 tcp://localhost:10003/S clientScript1.txt
+Wait 20000
+Server s04 tcp://localhost:11005/S 300 500
+Wait 20000
+//Freeze s01
+Wait 5000
+//Unfreeze s01

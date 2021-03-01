@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="resources/underscore/underscore.js"></script>
+    <script type="text/javascript" src="resources/jquery/jquery.js"></script>
+    <script type="text/javascript" src="resources/jquery/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Food.js"></script>
+    <script type="text/javascript" src="js/meteo.js"></script>
+    <script type="text/javascript" src="js/Menu.js"></script>
+    <script type="text/javascript" src="js/Plate.js"></script>
+    <script type="text/javascript" src="js/Order.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script>
+    <script type="text/javascript" src="js/extraFunctions.js"></script>
+    <script type="text/javascript" src="js/orderFunctions.js"></script>
+    <script type="text/javascript" src="js/dragHandlers.js"></script>
+    <script type="text/javascript" src="resources/raphael/raphael.js"></script>
+    <script type="text/javascript" src="resources/colisions/SAT.js"></script>
+    <script type="text/javascript" src="resources/colisions/WorldFunctions.js"></script>
+    <script type="text/javascript" src="resources/h3HtmlInclude/includeHtml.js"></script>
+    <script type="text/javascript" src="resources/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/h3buttons.css">
+    <link rel="stylesheet" href="css/fakeBrowser.css">
+    <link rel="stylesheet" href="resources/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resources/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="resources/gifplayer-master/dist/jquery.gifplayer.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/gifplayer-master/dist/gifplayer.css">
+    <script src="resources/numpad/jquery.numpad.js"></script>
+    <link rel="stylesheet" href="resources/numpad/jquery.numpad.css">
+</head>
+
+<style type="text/css">
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+/*** custom checkboxes ***/
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 7px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+</style>
+
+<body class="unselectable" style="height: 100%; overflow: hidden;">
+
+    <div id="interface" style="width: 100%; height:100%; position:absolute; top:0; overflow: hidden;"></div>
+
+    <div id="welcome" style="width: 100%; height:100%; position:absolute; overflow: hidden; background-color:rgba(48, 48, 48, 0.7); display: flex; align-items: center; justify-content: center;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); text-align: center;">
+            <p style="font-size: 60px;">Bem vindo ao nosso restaurante</p>
+            <p style="font-size: 20px;">Carregue em qualquer sítio para começar</p>
+        </div>
+    </div>
+
+    <div id="lock" style="width: 100%; height:100%; position:absolute; overflow: hidden; background-color:rgba(48, 48, 48, 0.7); display: none; align-items: center; justify-content: center;">
+          <a href="#" class="btn btn-warning buttonHelp" onclick='$("#lock").hide("fade")' style="height: 120px;width: 120px; float: right; margin-top: 25px; margin-right: 22px"><img src="resources/Images/buttons/unlock.png" style="max-height: 100%; max-width: 100%;"></a>
+          <div style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); text-align: center;">
+              <p style="font-size: 60px;">O ecrã encontra-se bloqueado</p>
+              <p style="font-size: 20px;">Carregue no cadeado para o desbloquear</p>
+          </div>
+    </div>
+
+    </div>
+
+     <div id="ajuda1" style="width: 100%; height:100%; position:absolute; overflow: hidden; background-color:rgba(48, 48, 48, 0.7); display: none; align-items: center; justify-content: center;">
+        <div class="well" style="position: absolute; width:1050px;top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); text-align: center; border-style: solid;border-color: #414141; user-select: none;">
+            <p style="font-size: 60px;">Como utilizar o menu principal</p>
+            <p style="font-size: 20px;">Carregue em qualquer icon para saber o que faz.</p>
+            <hr>
+
+            <a href="#" class="btn btn-info"  data-trigger="focus" data-placement="bottom" data-toggle="popover" title="Chamar um epregado" data-content="Pode chamar um empregado à mesa a qualquer momento." id="sideButton" style="padding: 0; margin: 2pt;"><img src="resources/Images/buttons/waiter.png" style="height: 100px; width: 100px;"><br> Empregado</a>
+
+            <a href="#" class="btn btn-info"  data-trigger="focus" data-placement="bottom" data-toggle="popover" title="Menu de Informação" data-content="Ao abrir este submenu pode encontrar informação sobre o seu pedido, transportes públicos e meteorologia." id="sideButton" style="padding: 0; margin: 2pt;"><img src="resources/Images/buttons/info.png" style="height: 100px; width: 100px;"><br> Informação</a>
+
+            <a href="#" class="btn btn-info"  data-trigger="focus" data-placement="bottom" data-toggle="popover" title="Efetuar um Pedido" data-content="Aqui pode realizar o seu pedido. Pode também adicionar novos pratos realizando pedidos adicionais." id="sideButton" style="padding: 0; margin: 2pt;"><img src="resources/Images/buttons/food.png" style="height: 100px; width: 100px;"><br> Pedido</a>
+
+            <a href="#" class="btn btn-info"  data-trigger="focus" data-placement="bottom" data-toggle="popover" title="Menu de Lazer" data-content="Ao abrir este submenu tem acesso a jornais, revistas e jogos individuais e com outras mesas." id="sideButton" style="padding: 0; margin: 2pt;"><img src="resources/Images/buttons/enter.png" style="height: 100px; width: 100px;"><br> Lazer</a>
+
+            <a href="#" class="btn btn-info"  data-trigger="focus" data-placement="bottom" data-toggle="popover" title="Menu de Pagamento" data-content="Aqui pode efetuar o pagamento. Pode optar por pagar com dinheiro ou multibanco. Após efetuado a sessão é terminada." id="sideButton" style="padding: 0; margin: 2pt;"><img src="resources/Images/buttons/pay1.png" style="height: 100px; width: 100px;"><br> Pagamento</a>
+
+            <a href="#" class="btn btn-info"  data-trigger="focus" data-placement="bottom" data-toggle="popover" title="Bloquear" data-content="O ecrã é bloqueado e os botões desativados. Basta carregar de novo para desbloquear." id="sideButton" style="padding: 0; margin: 2pt;"><img src="resources/Images/buttons/lock.png" style="height: 100px; width: 100px;"><br> Bloquear</a>
+
+            <hr style="padding-bottom: 20pt">
+            <a href="#" class="btn btn-danger closeHelp" style="right: 15pt; bottom: 10pt; position: absolute;">Voltar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="hiddenTrash" style="display: none">
+         <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix" style="height:380px; overflow: auto">
+         </ul>
+    </div>
+    <div id="paymentTrash" style="display: none">
+         <ul id="paymentGallery" class="gallery ui-helper-reset ui-helper-clearfix" style="height:290px; overflow: auto">
+         </ul>
+    </div>
+
+    <script type="text/javascript">
+        var h = $(window).height();
+        var w = $(window).width();
+        $("#hiddenTrash").data("totalTemp", 0);
+        $("#hiddenTrash").data("total", 0);
+        $("#paymentTrash").data("total", 0);
+        var buttonSize = 100;
+        $("#interface").css("height", h);
+        var interface = new Interface(createWorld("interface"));
+        var side = null;
+
+        interface.buttons = createButtons();
+        interface.canvas.image("resources/Images/background/logo.png", 40, 40, 250, 125);
+        interface.setBackground("resources/Images/background/checkers.jpg");
+
+        (function doRotate() {
+            interface.simulate();
+            window.requestAnimationFrame(doRotate);
+        })();
+
+        $('#welcome').click(function() {
+            $('#welcome').hide("fade");
+        });
+        $('.closeHelp').click(function() {
+            $('#ajuda1').hide("fade");
+        });
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+        //interface.welcome("resources/Images/grey.png", "bla", "bla.html");
+    </script>
+
+    <script type="text/javascript">
+        var eComboios = ["Oriente", "Roma-Areeiro", "Entrecampos", "Sete Rios"];
+        var eAutocarros = ["Al. D. Afonso Henriques", "Praça do Chile", "Largo do Leão", "Arco Cego"];
+        var eBarcos = ["Cais do Sodré", "Terreiro do Paço", "Belém"];
+        function addMinutes(date, minutes) {
+            return new Date(date.getTime() + minutes*60000);
+        }
+
+        Array.prototype.randomElement = function () {
+            return this[Math.floor(Math.random() * this.length)]
+        }
+
+        function makeTransportTimes(origins, timeToArrive) {
+            var temp = new Date();
+            $('#transportList').empty();
+            for (var i = 0; i < 4; i++) {
+                var temp = addMinutes(temp, Math.floor(Math.random()*50))
+                $('#transportList').append('<tr class='+((i%2==0)? 'info' : 'active' )+'><td>'+(i+1)+'</td><td>'+origins.randomElement()+'</td><td>'+temp.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'})+'</td><td>'+addMinutes(temp, timeToArrive).toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'})+'</td></tr>');
+            }
+        }
+    </script>
+</body>
+
+</html>

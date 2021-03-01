@@ -1,0 +1,133 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: none;
+    overflow: hidden;
+  }
+
+  #box {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgrey;
+    bottom: 0;
+    position: absolute;
+    width: 600px;
+    z-index: 1;
+  }
+
+  #plotsBox {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgrey;
+    z-index: 1;
+    width: 1000px;
+    height: 100%;
+  }
+
+  #plots {
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      width: 500px;
+      height: 50%;
+      position: absolute;
+  }
+
+  #content {
+    padding: 15px;
+  }
+
+  #content p {
+    margin-top: 0;
+  }
+
+  #button a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  table {
+    border-collapse: separate;
+  }
+
+  td {
+    padding: 5px;
+    padding-right: 0;
+  }
+
+  th {
+    text-align: left;
+    padding: 15px;
+    padding-left: 0;
+    border-right: 1px solid lightgrey;
+  }
+
+  #c {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+
+  body {
+font-family: "Open Sans", sans-serif;
+}
+
+a {
+color: blue;
+text-decoration: none;
+}
+
+#handle2 .rs-handle  {
+background-color: transparent;
+border: 8px solid transparent;
+border-right-color: black;
+margin: -8px 0 0 1px !important;
+}
+#handle2 .rs-handle:before  {
+display: block;
+content: " ";
+position: absolute;
+height: 12px;
+width: 12px;
+background: black;
+right: -6px;
+bottom: -6px;
+border-radius: 100%;
+}
+#handle2 .rs-handle:after  {
+display: block;
+content: " ";
+width: 30px;
+position: absolute;
+top: -1px;
+right: 0px;
+border-top: 2px dotted black;
+}
+#handle2 .rs-range-color  {
+background-color: #000000;
+}
+#handle2 .rs-path-color  {
+background-color: #000000;
+}
+
+#map {
+    height: 100%;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  button.type1 span {border: 1px solid #01ff01; background: #01ff01; display: inline-block; width: 10px; height: 10px;}
+  button.type2 span {border: 1px solid #006600; background: #006600; display: inline-block; width: 10px; height: 10px;}
+  button.type3 span {border: 1px solid #adff08; background: #adff08; display: inline-block; width: 10px; height: 10px;}
+
+  #warning{
+    font-size: 10px;
+  }

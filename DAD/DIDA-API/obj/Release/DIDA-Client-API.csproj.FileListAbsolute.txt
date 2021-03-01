@@ -1,0 +1,9 @@
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Client-API\bin\Release\ClassLibrary1.dll
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Client-API\bin\Release\ClassLibrary1.pdb
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Client-API\bin\Release\DIDA-Lib.dll
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Client-API\bin\Release\DIDA-Lib.pdb
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Client-API\obj\Release\DIDA-Client-API.csprojAssemblyReference.cache
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Client-API\obj\Release\DIDA-Client-API.csproj.CoreCompileInputs.cache
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Client-API\obj\Release\DIDA-Client-API.csproj.CopyComplete
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Client-API\obj\Release\ClassLibrary1.dll
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Client-API\obj\Release\ClassLibrary1.pdb

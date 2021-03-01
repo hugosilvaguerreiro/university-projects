@@ -1,0 +1,28 @@
+[ ] Adicionar botão de ajuda ao lado direito do empregado (funcionamento complexo - mais sobre isto depois)
+
+[ ] Implementar o menu de pedido(pode ser mais que um, este é o mais trabalhoso)
+    [ ] Quando se abre um filtro as opções de comida substituem os filtros e aparece um botão de voltar
+    [ ] Editar não aparecer quando não tenho nenhuma comida selecionada
+    [ ] Arranjar imagens de comidas(png e sem fundo, com o crop o mais junto possivel a imagem)
+
+[ ] Implementar o menu de informações
+
+[X] Botão de chamar o empregado
+
+[ ] Implementar pop ups de "tem a certeza que... bla bla
+	[X] no chamar o empregado
+	[ ] no anular do pedido
+	[ ] no chamar o táxi
+
+[X] Retirar botão de pagamento temporariamente:
+	[ ] Implementar o menu de pagamento e reintroduzir o botão
+
+[X] Imagem central foi posta no canto inferior esquerdo (não é preciso mostrar I guess)
+
+[ ] Melhorar a estética dos menus (HTML e CSS)
+
+[ ] Implementar um menu inicial com login
+
+[ ] Melhorar os jogos
+
+[ ] Pdf's para revistas e jornais?

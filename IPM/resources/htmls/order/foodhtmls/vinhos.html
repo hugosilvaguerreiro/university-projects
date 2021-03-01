@@ -1,0 +1,35 @@
+<html>
+   <div class="panel panel-primary" >
+      <div class="panel-heading">
+         <h3 class="panel-title" style="position: relative;">Vinhos</h3>
+         <a href='#' class='btn btn-danger' onclick="openSideMenu('bebidas', interface, 'order/foodhtmls',270)" style="width: 27px; height: 27px; padding: 0; font-size: 16px; margin: 2px; position:absolute; left: 85%; top: 1%">&times;</a>
+      </div>
+      <div class="panel-body" style="padding-right: 0px;">
+         <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix" style="height:380px; overflow: auto">
+            <li class="ui-widget-content ui-corner-tr" id ="ferreira">
+               <h5 class="ui-widget-header">Ferreira</h5>
+               <img src="resources/Images/food/bebidas/ferreira.png" alt="ferreira" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('ferreira', 'bebidas', 'Ferreira','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#ferreira'), 'ferreira', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+           <li class="ui-widget-content ui-corner-tr" id ="verdeQuintaDAmares">
+               <h5 class="ui-widget-header">Verde quinta</h5>
+               <img src="resources/Images/food/bebidas/verdeQuintaDAmares.png" alt="verdeQuintaDAmares" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('verdeQuintaDAmares', 'bebidas', 'Verde quinta','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#verdeQuintaDAmares'), 'verdeQuintaDAmares', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+           <li class="ui-widget-content ui-corner-tr" id ="vidigueira">
+               <h5 class="ui-widget-header">Vidigueira<br/></h5>
+               <img src="resources/Images/food/bebidas/vidigueira.png" alt="vidigueira" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('vidigueira', 'bebidas', 'Vidigueira','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#vidigueira'), 'vidigueira', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+
+         </ul>
+
+      </div>
+   </div>
+</html>

@@ -1,0 +1,2 @@
+read <"b*">
+take <"bla1">

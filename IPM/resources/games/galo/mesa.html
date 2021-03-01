@@ -1,0 +1,72 @@
+ <head>
+  <script type="text/javascript" src="../../jquery/jquery.js"></script>
+  <script type="text/javascript" src="galo.js"></script>
+  <script type="text/javascript" src="../../underscore/underscore.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="galo.css">
+   <script type="text/javascript">
+     function voltar() {
+       window.location = "galo.html";
+     }
+   </script>
+   <script type="text/javascript">
+     var mesaVal = -1;
+     function load(flag) {
+       if(flag)
+          setTimeout(function() {load(false);}, Math.random() * (5000 - 1000) + 1000);
+       else {
+          if(mesaVal == -1) mesaVal = Math.round(Math.random() * (10 - 1) + 1);
+          $("#load").hide("puff");
+          $("#cover").hide();
+          $("#game").css({"display": ""});
+          $("#game").hide();
+          $("#game").show("puff");
+          var mesa = document.getElementById("mesa");
+          mesa.innerHTML = "A jogar contra a mesa " + mesaVal;
+       }
+     }
+     function reload() {
+       $("#load").html('<i class="fa fa-spinner fa-spin" style="margin-right: 10px;"></i>À espera que a mesa aceite');
+       $("#game").hide();
+       $("#game").css("display", "none");
+       $("#cover").show();
+        $("#load").css("position, absolute, top, 45%, left, 24%");
+       $("#load").show("puff");
+       load(true);
+     }
+   </script>
+</head>
+<body onload="load(true)">
+<div id = "cover" style="height: 100%; width: 100% position:absolute;"></div>
+<button class="buttonload" id="load" style="position: absolute; top:45%; left:28%;">
+  <i class="fa fa-spinner fa-spin" style="margin-right: 10px;"></i>A procurar uma mesa
+</button>
+<div style="display: none;" id="game">
+<h1 style="margin-bottom: 0">Jogo do Galo</h1>
+<p id="mesa" style="margin: 0"></p>
+<div id="load"></div>
+<div id="grid" style="position: relative;">
+  <div class="cell left top" id="0"></div>
+  <div class="cell top" id="1"></div>
+  <div class="cell right top" id="2"></div>
+  <div class="cell left" id="3"></div>
+  <div class="cell" id="4"></div>
+  <div class="cell right" id="5"></div>
+  <div class="cell left bottom" id="6"></div>
+  <div class="cell bottom" id="7"></div>
+  <div class="cell right bottom" id="8"></div>
+</div>
+<div id="result"></div>
+<form  style="display: none; visibility: hidden;">
+  <input class="players" type="radio" name="players" value=1 checked="checked" style="display: none; " />
+  <br/>
+</form>
+<button class="reset" id="resbutmesa" type="button" onclick="reload()">Repetir</button>
+<button class="reset" type="button" onclick="voltar()" >Voltar</button>
+
+<script type="text/javascript">
+  $("#resbutmesa").css("display", "none");
+</script>
+</div>
+
+</body>

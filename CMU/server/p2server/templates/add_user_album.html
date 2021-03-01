@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>New user</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Add User to Album</h1>
+        <form action="/addusertoalbum" method="post">
+            <div class="form-group">
+                <label for="exampleInputUser1"></label>
+                <input type="text" name="usr_id" class="form-control" id="exampleInputUser1"
+                    placeholder="Enter User ID">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputUser2"></label>
+                <input type="text" name="cookie" class="form-control" id="exampleInputUser2"
+                    placeholder="Enter cookie">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputUser3"></label>
+                <input type="text" name="n_usr_id" class="form-control" id="exampleInputUser3"
+                    placeholder="Other User ID">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputUser4"></label>
+                <input type="text" name="alb_id" class="form-control" id="exampleInputUser4"
+                    placeholder="Album ID">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputUser5"></label>
+                <input type="text" name="secret" class="form-control" id="exampleInputUser5"
+                    placeholder="Album secret">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+   <div class="panel panel-primary" >
+      <div class="panel-heading">
+         <h3 class="panel-title" style="position: relative;">Peixes</h3>
+         <a href='#' class='btn btn-danger' onclick="openSideMenu('principal', interface, 'order/foodhtmls', 270)" style="width: 27px; height: 27px; padding: 0; font-size: 16px; margin: 2px; position:absolute; left: 85%; top: 1%">&times;</a>
+      </div>
+      <div class="panel-body" style="padding-right: 0px;">
+         <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix" style="height:380px; overflow: auto">
+            <li class="ui-widget-content ui-corner-tr" id ="bacalhauABras">
+               <h5 class="ui-widget-header"  >Bacalhau à brás</h5>
+               <img src="resources/Images/food/peixes/bacalhauABras.png" alt="bacalhauABras" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('bacalhauABras', 'peixes', 'Bacalhau à brás','5.00&euro;',1,'00000100')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#bacalhauABras'), 'bacalhauABras', '00000100', 5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="bacalhauComNatas">
+               <h5 class="ui-widget-header"  >Bacalhau com natas</h5>
+               <img src="resources/Images/food/peixes/bacalhauComNatas.png" alt="bacalhauComNatas" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('bacalhauComNatas', 'peixes', 'Bacalhau com natas','4.50&euro;',1,'00000100')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#bacalhauComNatas'), 'bacalhauComNatas', '00000100', 5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="dourada">
+               <h5 class="ui-widget-header" style="min-height: 35.5px" >Dourada</h5>
+               <img src="resources/Images/food/peixes/dourada.png" alt="dourada" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('dourada', 'peixes', 'Dourada','4.50&euro;',1,'01000100')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#dourada'), 'dourada', '01000100', 5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="polvo">
+               <h5 class="ui-widget-header" style="min-height: 35.5px" >Polvo</h5>
+               <img src="resources/Images/food/peixes/polvo.png" alt="polvo" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('polvo', 'peixes', 'Polvo','4.50&euro;',1,'01000100')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#polvo'), 'polvo', '01000100', 5.00)" aria-hidden="true"></i>
+            </li>
+         </ul>
+
+      </div>
+   </div>
+</html>

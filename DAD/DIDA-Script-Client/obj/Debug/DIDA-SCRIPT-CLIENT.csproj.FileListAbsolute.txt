@@ -1,0 +1,12 @@
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\obj\Debug\DIDA-SCRIPT-CLIENT.csprojAssemblyReference.cache
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\obj\Debug\DIDA-SCRIPT-CLIENT.csproj.CoreCompileInputs.cache
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\bin\Debug\DIDA_SCRIPT_CLIENT.exe.config
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\bin\Debug\DIDA_SCRIPT_CLIENT.exe
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\bin\Debug\DIDA_SCRIPT_CLIENT.pdb
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\bin\Debug\DIDA-Lib.dll
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\bin\Debug\DIDA-Lib.pdb
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\obj\Debug\DIDA-SCRIPT-CLIENT.csproj.CopyComplete
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\obj\Debug\DIDA_SCRIPT_CLIENT.exe
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\obj\Debug\DIDA_SCRIPT_CLIENT.pdb
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\bin\Debug\DIDA-API.dll
+C:\Users\Hugo Guerreiro\source\repos\DIDAPROJ\DIDA\DIDA-Script-Client\bin\Debug\DIDA-API.pdb

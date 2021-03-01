@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <script type="text/javascript" src="../../../jquery/jquery.js"></script>
+</head>
+
+<script>
+function loadCity(name, displayName) {
+jQuery(document).ready(function($) {
+  $.ajax({
+    url : "http://api.wunderground.com/api/a1e0af8cc14bbe83/geolookup/conditions/forecast10day/lang:BR/q/Portugal/"+name+".json",
+    dataType : "jsonp",
+    success : function(parsed_json) {
+      document.getElementById("cityName").innerHTML = displayName;
+      for (i = 0; i < 6; i++) {
+        document.getElementById("date" + i).innerHTML = parsed_json['forecast']['simpleforecast']['forecastday'][i]['date']['weekday_short'];
+          document.getElementById("icon" + i).src = "http://icons.wxug.com/i/c/k/" +
+          parsed_json['forecast']['simpleforecast']['forecastday'][i]['icon'] + ".gif";
+          document.getElementById("tempHigh" + i).innerHTML =  parsed_json['forecast']['simpleforecast']['forecastday'][i]['high']['celsius'] + " ºC";
+          document.getElementById("tempLow" + i).innerHTML =  parsed_json['forecast']['simpleforecast']['forecastday'][i]['low']['celsius'] + " ºC";
+    }
+    }
+  });
+});
+}
+
+loadCity("Lisbon", "Lisboa");
+</script>
+
+<button class="btn btn-danger" >Voltar</button>
+<div>
+<!--
+<span style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; color: white;">Previsão para a semana</span><br></br>
+-->
+<center id="cityName" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 25; font-weight: bold; color: white;" onclick="loadCity('Beja', 'Beja');"></center>
+<table width="100%" style="margin-top: 20px">
+  <tr>
+    <td align="center" width="33%"><a id="date0" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20; color: white;"></a></td>
+    <td align="center" width="33%"><a id="date1" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20; color: white;"></a></td>
+    <td align="center" width="33%"><a id="date2" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20; color: white;"></a></td>
+  </tr>
+  <tr>
+    <th width="33%"><img id="icon0" style="width:75px;height:75px;"></th>
+    <th width="33%"><img id="icon1" style="width:75px;height:75px;"></th>
+    <th width="33%"><img id="icon2" style="width:75px;height:75px;"></th>
+  </tr>
+  <tr>
+    <th width="33%"><a id="tempHigh0" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #ff751a"></a></th>
+    <th width="33%"><a id="tempHigh1" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #ff751a"></a></th>
+    <th width="33%"><a id="tempHigh2" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #ff751a"></a></th>
+  </tr>
+  <tr>
+    <th width="33%"><a id="tempLow0" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #3366ff"></a></th>
+    <th width="33%"><a id="tempLow1" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #3366ff"></a></th>
+    <th width="33%"><a id="tempLow2" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #3366ff"></a></th>
+  </tr>
+</table>
+</div>
+<div style="margin-top: 20px">
+<table width="100%">
+  <tr>
+    <td align="center" width="33%"><a id="date3" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20; color: white;"></a></td>
+    <td align="center" width="33%"><a id="date4" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20; color: white;"></a></td>
+    <td align="center" width="33%"><a id="date5" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20; color: white;"></a></td>
+  </tr>
+  <tr>
+    <th width="33%"><img id="icon3" style="width:75px;height:75px;"></th>
+    <th width="33%"><img id="icon4" style="width:75px;height:75px;"></th>
+    <th width="33%"><img id="icon5" style="width:75px;height:75px;"></th>
+  </tr>
+  <tr>
+    <th width="33%"><a id="tempHigh3" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #ff751a"></a></th>
+    <th width="33%"><a id="tempHigh4" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #ff751a"></a></th>
+    <th width="33%"><a id="tempHigh5" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #ff751a"></a></th>
+  </tr>
+  <tr>
+    <th width="33%"><a id="tempLow3" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #3366ff"></a></th>
+    <th width="33%"><a id="tempLow4" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #3366ff"></a></th>
+    <th width="33%"><a id="tempLow5" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #3366ff"></a></th>
+  </tr>
+</table>
+</div>
+
+</html>

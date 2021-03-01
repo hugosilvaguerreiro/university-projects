@@ -1,0 +1,27 @@
+<html>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title" style="position: relative;">Menu Principal</h3>
+	<a href='#' class='btn btn-danger' onclick="interface.removeSideMenu()" style="width: 27px; height: 27px; padding: 0; font-size: 16px; margin: 2px; position:absolute; left: 85%; top: 1%">&times;</a>
+  </div>
+  <div class="panel-body">
+	<a href="#" class="btn btn-info"  onclick="openSideMenu('sopas', interface, 'order/foodhtmls', 276);startGallery()" style="width: 100%; margin: 2pt 0 2pt 0;">Sopas</a>
+	<a href="#" class="btn btn-info" onclick="openSideMenu('carnes', interface, 'order/foodhtmls', 288+getScrollbarWidth());startGallery()" style="width: 100%; margin: 2pt 0 2pt 0;">Carnes</a>
+	<a href="#" class="btn btn-info" onclick="openSideMenu('peixes', interface, 'order/foodhtmls', 276);startGallery()" style="width: 100%; margin: 2pt 0 2pt 0;">Peixe</a>
+	<a href="#" class="btn btn-info"  onclick="openSideMenu('saladas', interface, 'order/foodhtmls', 276);startGallery()" style="width: 100%; margin: 2pt 0 2pt 0;">Saladas</a>
+  </div>
+</div>
+</html>
+
+<!-- 
+NOTE: 254+getScrollbarWidth == 
+(largura das imagens + margem direita das imagens) * (numero de imagens por linha) + largura da barra ==
+(115 + 12) * 2 + getScrollbarWidth();
+
+Como estamos no sideMenu de fora:
+286 == 254 + 2*(margem da ul == 15) + 4px (por ser div interior - borders); 
+
+Sem scroll: 276 = 254 + 12(entre imagens) + 15(margem do lado esquerdo do painel) + 3(margem do lado direito) + 4px
+
+Ainda nao foi testado no chrome mas funciona em firefox
+-->

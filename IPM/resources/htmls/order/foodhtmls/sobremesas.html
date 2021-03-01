@@ -1,0 +1,41 @@
+<html>
+   <div class="panel panel-primary" >
+      <div class="panel-heading">
+         <h3 class="panel-title" style="position: relative;">Sobremesas</h3>
+         <a href='#' class='btn btn-danger' onclick="interface.removeSideMenu()" style="width: 27px; height: 27px; padding: 0; font-size: 16px; margin: 2px; position:absolute; left: 85%; top: 1%">&times;</a>
+      </div>
+      <div class="panel-body" style="padding-right: 0px;">
+         <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix" style="height:380px; overflow: auto">
+            <li class="ui-widget-content ui-corner-tr" id ="arrozDoce">
+               <h5 class="ui-widget-header"  >Arroz<br/> doce</h5>
+               <img src="resources/Images/food/sobremesas/arrozDoce.png" alt="arrozDoce" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('arrozDoce', 'sobremesas', 'Arroz Doce','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#arrozDoce'), 'arrozDoce', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="mousseDeChocolate">
+               <h5 class="ui-widget-header"  >Mousse de chocolate</h5>
+               <img src="resources/Images/food/sobremesas/mousseDeChocolate.png" alt="mousseDeChocolate" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('mousseDeChocolate', 'sobremesas', 'Mousse de chocolate','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#mousseDeChocolate'), 'mousseDeChocolate', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+			<li class="ui-widget-content ui-corner-tr" id ="mousseDeManga">
+               <h5 class="ui-widget-header"  >Mousse de manga</h5>
+               <img src="resources/Images/food/sobremesas/mousseDeManga.png" alt="mousseDeManga" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('mousseDeManga', 'sobremesas', 'Mousse de manga','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#mousseDeManga'), 'mousseDeManga', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+            <li class="ui-widget-content ui-corner-tr" id ="pudimDeOvos">
+               <h5 class="ui-widget-header"  >Pudim de <br/> ovos</h5>
+               <img src="resources/Images/food/sobremesas/pudimDeOvos.png" alt="pudimDeOvos" width="96" height="72">
+               <i class="fa fa-pencil-square-o " title="Ver detalhes" onclick="showDetails('pudimDeOvos', 'sobremesas', 'Pudim de ovos','5.00&euro;',1,'00000000')" aria-hidden="true"><span class='badge'>5.00&euro;</span></i>
+               <span></span>
+               <i class="fa fa-plus-circle" title="Adicionar" onclick="deleteImageFix($('#pudimDeOvos'), 'pudimDeOvos', '00000000',5.00)" aria-hidden="true"></i>
+            </li>
+         </ul>
+
+      </div>
+   </div>
+</html>
